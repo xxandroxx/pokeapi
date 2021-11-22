@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.8rem;
+    font-family: 'Shippori Antique', sans-serif;
+    background: rgb(49, 125, 160);
+}
+
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+p{
+    font-size: 2rem;
+}
+a{
+    font-size: 2rem;
+    text-decoration: none;
+}
+a:visited{
+    color: #000;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/*header*/
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-img-titulo img{
+    width: 30rem;
+    height: 30rem;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-bar a{
+    background: #ffcd02;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    border-bottom: .3rem solid #000;
+    border-top: .1rem solid #000;
+    border-left: .3rem solid #000;
+    border-right: .1rem solid #000;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/*main-index*/
+.contenedor-main{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5rem;
+}
+.contenido-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    border-radius: .5rem;
+    width: 30rem;
+    box-shadow: .5rem .5rem 1rem 0 rgba(0, 0, 0, .7);
+    background: #fff;
+
+}
+
+.contenido-main h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.contenido-imagen-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+/*---------------Buscar Pokemon por nombre-------------------------*/
+/*Formulario*/
+.formulario{
+    margin-top: 10rem;
+    text-align: center;
+}
+.formulario input{
+    padding: .7rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.formulario button{
+    font-size: 2rem;
+    padding: .7rem;
+    background: #ffcd02;
+}
+
+.contenedor-main-buscar{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    position: relative;
+}
+
+.contenido-main-buscar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    border-radius: .5rem;
+    width: 30rem;
+    box-shadow: .5rem .5rem 1rem 0 rgba(0, 0, 0, .7);
+    background: #fff;
+}
+
+.contenido-main-buscar h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.contenido-main-buscar-img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+/*div type*/
+.div-type{
+    background: #ffcd02;
+    border-radius: 1rem;
+    border: .1rem solid #000;
+    margin-top: 2rem;
+    
+}
+.div-type p{
+    padding: .2rem .8rem;
+    text-transform: capitalize;
+    font-weight: 700;
+
+}
+
+
+/*Cargando*/
+.carga{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: -10rem;
+    display: none;
+}
+.carga img{
+    width: 20rem;
+    animation: girar 3s infinite linear;
+}
+
+
+@keyframes girar{
+   from{
+       transform: rotate(0deg);
+   }
+
+   to{
+       transform: rotate(360deg);
+   }
+}

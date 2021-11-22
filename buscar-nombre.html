@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
+    <link rel="short-cut icon" href="img/pokeball-ico.ico">
+    <title>Pokedex</title>
+</head>
+<body>
+
+    <header class="header contenedor">
+        <div class="contenedor-img-titulo">
+            <img src="img/pokemon-titulo.png" alt="pokemon-titulo">
+        </div>
+
+        <nav class="nav-bar">
+            <a href="/">Pokedex</a>
+            <a href="buscar-nombre.html">Buscar por nombre</a>
+        </nav>
+   </header>
+
+
+   <section class="contenedor-formulario contenedor">
+       <form id="formulario" class="formulario">
+           <input id="input-buscar" type="text" placeholder="Buscar Pokemon">
+           <button id="btn-buscar">Buscar</button>
+       </form>
+   </section>
+
+
+   <main id="contenedor-main-buscar" class="contenedor-main-buscar contenedor">
+       
+        <div class="carga">
+            <h2>Cargando</h2>
+            <img src="img/pokeball.png" alt="pokeball">
+        </div>
+
+   </main>
+
+
+    <script src="js/buscarNombre.js"></script>
+</body>
+</html>
